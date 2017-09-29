@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="displayOptions">showHome</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="descriptionTextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+</resources>

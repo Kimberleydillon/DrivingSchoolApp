@@ -1,0 +1,242 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="#cfcfcf"-->
+        <!--android:elevation="4dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/steeringwheel" />-->
+        <!--</android.support.v7.widget.Toolbar>-->
+
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_gravity="top"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginRight="4dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:elevation="2dp"-->
+        <!--android:foreground="?attr/selectableItemBackground"-->
+        <!--card_view:cardCornerRadius="4dp">-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="2"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/volt" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fafafa"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp">
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#000000" />
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+
+            android:scaleType="fitEnd"
+            android:src="@drawable/topgunlogo" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="4dp"
+            android:elevation="2dp"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<TextView-->
+                <!--android:id="@+id/info_company"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="sans-serif-light"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:paddingTop="16dp"-->
+                <!--android:text="Top Gun Driving School"-->
+                <!--android:textColor="#D8000000"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+
+                    android:id="@+id/phoneicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="12dp"
+                    card_view:materialIcon="phone"
+                    card_view:materialIconColor="#000000"
+                    card_view:materialIconSize="24dp" />
+
+                <TextView
+                    android:id="@+id/info_phone"
+                    style="@style/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/phoneicon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@id/phoneicon"
+                    android:layout_toRightOf="@id/phoneicon"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:text="250-885-2216" />
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+
+                    android:id="@+id/emailicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phoneicon"
+                    android:padding="12dp"
+                    card_view:materialIcon="email"
+                    card_view:materialIconColor="#000000"
+                    card_view:materialIconSize="24dp" />
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+
+                    android:id="@+id/websiteicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailicon"
+                    android:padding="12dp"
+                    card_view:materialIcon="desktop_mac"
+                    card_view:materialIconColor="#000000"
+                    card_view:materialIconSize="24dp" />
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+
+                    android:id="@+id/hoursofopicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/websiteicon"
+                    android:padding="12dp"
+                    card_view:materialIcon="clock"
+                    card_view:materialIconColor="#000000"
+                    card_view:materialIconSize="24dp" />
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+
+                    android:id="@+id/descriptionicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hoursofopicon"
+                    android:padding="12dp"
+                    card_view:materialIcon="information_outline"
+                    card_view:materialIconColor="#000000"
+                    card_view:materialIconSize="24dp" />
+
+
+                <TextView
+                    android:id="@+id/info_email"
+                    style="@style/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/emailicon"
+                    android:layout_alignTop="@id/emailicon"
+                    android:layout_below="@id/info_phone"
+                    android:layout_toRightOf="@id/emailicon"
+                    android:padding="12dp"
+                    android:text="info@topgundrivingschool.ca" />
+
+
+                <TextView
+                    android:id="@+id/info_website"
+                    style="@style/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/websiteicon"
+                    android:layout_alignTop="@id/websiteicon"
+                    android:layout_below="@id/info_email"
+                    android:layout_toRightOf="@id/websiteicon"
+                    android:padding="12dp"
+                    android:text="Website: topgundrivingschool.ca" />
+
+                <TextView
+                    android:id="@+id/info_hours"
+                    style="@style/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/hoursofopicon"
+                    android:layout_alignTop="@id/hoursofopicon"
+                    android:layout_below="@id/info_website"
+                    android:layout_toRightOf="@id/hoursofopicon"
+                    android:padding="12dp"
+                    android:text="Hours of Operation: 8AM- 8PM " />
+
+                <TextView
+                    android:id="@+id/info_description"
+                    style="@style/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/descriptionicon"
+                    android:layout_below="@id/info_hours"
+                    android:layout_toRightOf="@id/descriptionicon"
+                    android:padding="12dp"
+                    android:text="Learn how to drive from professionals who truly care! We offer preparation for class 5 and 7 licenses. Join our fleet of accomplished drivers and strive to make our roadways safer!  " />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>
